@@ -8,12 +8,9 @@
 			</run>
 		</groups>
 		<classes>
-			<class
-				name="com.vtiger.organization.Tc002_Createorganizationbydropdown_Test" />
-			<class
-				name="com.vtiger.organization.Tc001_Createorganisation_Test" />
-			<class
-				name="com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test" />
+			<class name="com.vtiger.organization.Tc002_Createorganizationbydropdown_Test" />
+			<class name="com.vtiger.organization.Tc001_Createorganisation_Test" />
+			<class name="com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
