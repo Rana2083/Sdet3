@@ -29,7 +29,7 @@ import com.vtiger.generic.webdriverUtil;
 
 public class Tc003_CreateContactusingOrganizationName_Test extends base{
 
-@Test
+@Test(groups="RegressionTest")
 	public void createorganzizationwithcontact() throws InterruptedException, IOException
 	{
 //		String Browser=FileUtil.objectoffileutil().readdatafrompropfile("browser");
@@ -89,7 +89,7 @@ public class Tc003_CreateContactusingOrganizationName_Test extends base{
         ccp.contactsdd2(1);
         cp.getSubmitbtn().click();
 		Thread.sleep(10000);
-
+		cp.getExpectedresult().isEnabled();
 		String expected=cp.getExpectedresult().getText();
 		System.out.println(expected);
 //        if(expected.equalsIgnoreCase(contname1))

@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -26,7 +27,7 @@ import com.vtiger.generic.webdriverUtil;
 public class Tc001_Createorganisation_Test extends base
 {
 
-	@Test
+	@Test(groups="RegressionTest")
 	public void openbrowser() throws IOException, InterruptedException {
 		homePage hp=new homePage(driver);
 		createorganzationPage cop=new createorganzationPage(driver);
@@ -46,17 +47,20 @@ public class Tc001_Createorganisation_Test extends base
 
 		og.dropdown();
 		og.getSubmit().click();
-		Thread.sleep(5000);
-		WebElement expected=cop.getCompare();
-//		if(expected.equalsIgnoreCase(name))
-//		{ 
+		Thread.sleep(500);
+		cop.getCompare().isEnabled();
+		Thread.sleep(20000);
+		String expected=og.getExpected().getText();
+		
+//		if(expected.equalsIgnorecase(name))
+//        { 
 //			System.out.println("Pass");
 //		}		
 //		else
 //		{			
 //			System.out.println("fail");
-//		}
-		assertEquals(expected, name);
+//     	}
+		Assert.assertEquals(name, expected);
 
 	}
 @Test(groups="SmokeTesting")
@@ -84,11 +88,10 @@ public void createOrganphone() throws InterruptedException
 
 	og.dropdown1();
 	og.getSubmit().click();
-	Thread.sleep(5000);
-	String expected=cop.getCompare().getText();
-	
-	
-    //String expected=og.getExpected().getText();
+	Thread.sleep(500);
+	og.getExpected().isEnabled();
+	Thread.sleep(2000);
+    String expected=og.getExpected().getText();
 	
 //    if(expected.equalsIgnoreCase(sphone))
 //	{ 
@@ -99,7 +102,7 @@ public void createOrganphone() throws InterruptedException
 //	{			
 //		System.out.println("fail");
 //	}
-    assertEquals(expected,name);
+    Assert.assertEquals(expected,name);
 
 }
 }

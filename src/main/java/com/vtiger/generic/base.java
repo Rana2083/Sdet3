@@ -16,6 +16,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 public class base 
 {
@@ -29,10 +30,10 @@ public class base
 		System.out.println("Data Base conection");
 	}
 	
+	//@Parameters("browser")
 	@BeforeClass(groups = {"SmokeTesting","RegressionTesting"})
 	public void browser() throws IOException
 	{
-	
 	String Browser=FileUtil.objectoffileutil().readdatafrompropfile("browser");
 	if(Browser.equalsIgnoreCase("firefox"))
 	{

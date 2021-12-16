@@ -27,7 +27,7 @@ import com.vtiger.generic.webdriverUtil;
 
 public class Tc002_Createorganizationbydropdown_Test extends base {
 
- @Test
+ @Test(groups="RegressionTest")
 	public void  createOrgdropdown() throws IOException, InterruptedException
 	{
 //		// Launch the Browser 
@@ -77,8 +77,8 @@ public class Tc002_Createorganizationbydropdown_Test extends base {
 		og.getSearchtext().sendKeys(orgname);
 		og.dropdown();
 		og.getSubmit().click();
-		
-		Thread.sleep(5000);
+		og.getExpected().isEnabled();
+		Thread.sleep(2000);
 		String expected=og.getExpected().getText();
 		System.out.println(expected);
 //		if(expected.equalsIgnoreCase(orgname))

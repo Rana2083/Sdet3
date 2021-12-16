@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sdet2.day1.SampleTest">
+      <class name="com.vtiger.organization.Tc001_Createorganisation_Test">
         <methods>
-          <include name="pass_parameter"/>
+          <include name="quit"/>
+          <include name="signout"/>
+          <include name="browser"/>
+          <include name="createOrganphone"/>
+          <include name="dbconnection"/>
+          <include name="login"/>
+          <include name="dbclose"/>
         </methods>
-      </class> <!-- com.sdet2.day1.SampleTest -->
+      </class> <!-- com.vtiger.organization.Tc001_Createorganisation_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
