@@ -1,0 +1,15 @@
+2021-12-30 15:34:28,735  INFO [main] base:35 - connection to DataBases
+2021-12-30 15:34:28,742  INFO [main] base:42 - execute Test cases
+2021-12-30 15:34:28,797  INFO [main] base:96 - exit from TEST
+2021-12-30 15:35:47,549  INFO [main] base:35 - connection to DataBases
+2021-12-30 15:35:47,556  INFO [main] base:42 - execute Test cases
+2021-12-30 15:36:17,530  INFO [main] base:96 - exit from TEST
+2022-01-20 12:22:11,335  INFO [main] base:35 - connection to DataBases
+2022-01-20 12:22:11,344  INFO [TestNG-tests-1] base:42 - execute Test cases
+2022-01-20 12:22:11,345  INFO [TestNG-tests-3] base:42 - execute Test cases
+2022-01-20 12:22:11,346  INFO [TestNG-tests-2] base:42 - execute Test cases
+2022-01-20 12:23:07,205  INFO [TestNG-tests-3] base:96 - exit from TEST
+2022-01-20 12:23:07,921  INFO [TestNG-tests-2] base:96 - exit from TEST
+2022-01-20 13:29:40,823  INFO [main] base:35 - connection to DataBases
+2022-01-20 13:29:40,827  INFO [main] base:42 - execute Test cases
+2022-01-20 13:30:56,356  INFO [main] base:96 - exit from TEST

@@ -27,8 +27,20 @@ public class ExecuteQueryTest
 		ResultSet	res=stm.executeQuery("select * from student_info");
 		while(res.next())
 		{
-			System.out.println(res.getString(1)+" "+res.getString(2));
+			//System.out.println(res.getString(1)+" "+res.getString(2));
+			if(res.getString(2).equals("ram"))
+			{
+				System.out.println("it is present inside the Data Base");				
+			}
 
+			else if(res.getString(2).equals("shyam"))
+			{
+				System.out.println("it is present inside the Data Base");				
+			}
+			else if(res.getString(2).equals("kphb"))
+			{
+				System.out.println("it is present inside the Data Base");				
+			}
 		}
 		con.close();
 	}

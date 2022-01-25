@@ -8,10 +8,12 @@
           <include name="quit"/>
           <include name="signout"/>
           <include name="browser"/>
-          <include name="createOrganphone"/>
+          <include name="exit_Reports"/>
           <include name="dbconnection"/>
           <include name="login"/>
+          <include name="openbrowser"/>
           <include name="dbclose"/>
+          <include name="generatelog"/>
         </methods>
       </class> <!-- com.vtiger.organization.Tc001_Createorganisation_Test -->
     </classes>

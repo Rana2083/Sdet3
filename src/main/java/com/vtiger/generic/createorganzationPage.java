@@ -78,21 +78,21 @@ public class createorganzationPage
 	webdriverUtil web=new webdriverUtil(driver);
 	public void dropdown1(String sheetname,int cellvalue,String value) throws IOException
 	{
-		String dd1=ExcelUtil.objectexcelUtil().selectvaluefordd(sheetname, cellvalue, value);
+		String dd1=ExcelUtil.objectoffileutil().selectvaluefordd(sheetname, cellvalue, value);
 		industrydd.click();
 		web.selectvaluefromdd(industrydd, dd1);
 	}
 	
 	public void dropdown2(String sheetname,int cellvalue,String value) throws IOException
 	{
-		String dd1=ExcelUtil.objectexcelUtil().selectvaluefordd(sheetname, cellvalue, value);
+		String dd1=ExcelUtil.objectoffileutil().selectvaluefordd(sheetname, cellvalue, value);
 		//industrydd.click();
 		web.selectvaluefromdd(accounttypedd, dd1);
 	}
 	
 	public void dropdown3(String sheetname,int cellvalue,String value) throws IOException
 	{
-		String dd1=ExcelUtil.objectexcelUtil().selectvaluefordd(sheetname, cellvalue, value);
+		String dd1=ExcelUtil.objectoffileutil().selectvaluefordd(sheetname, cellvalue, value);
 		//industrydd.click();
 		web.selectvaluefromdd(ratingdd, dd1);
 	}

@@ -79,8 +79,9 @@ public class Tc002_Createorganizationbydropdown_Test extends base {
 		og.getSubmit().click();
 		og.getExpected().isEnabled();
 		Thread.sleep(2000);
+		
 		String expected=og.getExpected().getText();
-		System.out.println(expected);
+		
 //		if(expected.equalsIgnoreCase(orgname))
 //		{ 
 //			System.out.println("Pass");

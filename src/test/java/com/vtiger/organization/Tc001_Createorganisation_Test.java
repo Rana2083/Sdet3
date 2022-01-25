@@ -49,7 +49,7 @@ public class Tc001_Createorganisation_Test extends base
 		og.getSubmit().click();
 		Thread.sleep(500);
 		cop.getCompare().isEnabled();
-		Thread.sleep(20000);
+		Thread.sleep(5000);
 		String expected=og.getExpected().getText();
 		
 //		if(expected.equalsIgnorecase(name))
@@ -90,7 +90,7 @@ public void createOrganphone() throws InterruptedException
 	og.getSubmit().click();
 	Thread.sleep(500);
 	og.getExpected().isEnabled();
-	Thread.sleep(2000);
+	Thread.sleep(5000);
     String expected=og.getExpected().getText();
 	
 //    if(expected.equalsIgnoreCase(sphone))
@@ -102,7 +102,7 @@ public void createOrganphone() throws InterruptedException
 //	{			
 //		System.out.println("fail");
 //	}
-    Assert.assertEquals(expected,name);
+    Assert.assertEquals(name,expected);
 
 }
 }

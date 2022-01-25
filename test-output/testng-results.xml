@@ -2,43 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-16T11:57:25 IST" name="Default suite" finished-at="2021-12-16T11:58:01 IST" duration-ms="35645">
+  <suite started-at="2022-01-25T22:05:46 IST" name="Default suite" finished-at="2022-01-25T22:05:46 IST" duration-ms="291">
     <groups>
-      <group name="RegressionTest">
-        <method signature="Tc003_CreateContactusingOrganizationName_Test.createorganzizationwithcontact()[pri:0, instance:com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test@4b0d79fc]" name="createorganzizationwithcontact" class="com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test"/>
-      </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2021-12-16T11:57:25 IST" name="Default test" finished-at="2021-12-16T11:58:01 IST" duration-ms="35645">
-      <class name="com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test">
-        <test-method is-config="true" signature="dbconnection()[pri:0, instance:com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test@4b0d79fc]" started-at="2021-12-16T11:57:25 IST" name="dbconnection" finished-at="2021-12-16T11:57:25 IST" duration-ms="9" status="PASS">
+    <test started-at="2022-01-25T22:05:46 IST" name="Default test" finished-at="2022-01-25T22:05:46 IST" duration-ms="291">
+      <class name="com.jdbc.connections.ExecuteQueryTest">
+        <test-method signature="executeQueryTest()[pri:0, instance:com.jdbc.connections.ExecuteQueryTest@21e360a]" started-at="2022-01-25T22:05:46 IST" name="executeQueryTest" finished-at="2022-01-25T22:05:46 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dbconnection -->
-        <test-method is-config="true" signature="browser()[pri:0, instance:com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test@4b0d79fc]" started-at="2021-12-16T11:57:25 IST" name="browser" finished-at="2021-12-16T11:57:29 IST" duration-ms="3843" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test@4b0d79fc]" started-at="2021-12-16T11:57:29 IST" name="login" finished-at="2021-12-16T11:57:32 IST" duration-ms="3097" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createorganzizationwithcontact()[pri:0, instance:com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test@4b0d79fc]" started-at="2021-12-16T11:57:32 IST" name="createorganzizationwithcontact" finished-at="2021-12-16T11:57:59 IST" duration-ms="26746" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createorganzizationwithcontact -->
-        <test-method is-config="true" signature="signout()[pri:0, instance:com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test@4b0d79fc]" started-at="2021-12-16T11:57:59 IST" name="signout" finished-at="2021-12-16T11:58:00 IST" duration-ms="1826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signout -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test@4b0d79fc]" started-at="2021-12-16T11:58:00 IST" name="quit" finished-at="2021-12-16T11:58:01 IST" duration-ms="76" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-        <test-method is-config="true" signature="dbclose()[pri:0, instance:com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test@4b0d79fc]" started-at="2021-12-16T11:58:01 IST" name="dbclose" finished-at="2021-12-16T11:58:01 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dbclose -->
-      </class> <!-- com.vtiger.organization.Tc003_CreateContactusingOrganizationName_Test -->
+        </test-method> <!-- executeQueryTest -->
+      </class> <!-- com.jdbc.connections.ExecuteQueryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,9 +1,10 @@
-package com.vtiger.generic;
+ package com.vtiger.generic;
 
 import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -13,27 +14,40 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 public class base 
 {
+	
 	public WebDriver driver;
+    Logger log=Logger.getLogger(base.class);
 	loginPage lg;
 	homePage hp;
 	public static WebDriver sdriver;
 	@BeforeSuite
 	public void dbconnection()
 	{
+		log.info("connection to DataBases");
 		System.out.println("Data Base conection");
 	}
+	
+	@BeforeTest
+	public void generatelog()
+	{
+		log.info("execute Test cases");
+	}
+	
 	
 	//@Parameters("browser")
 	@BeforeClass(groups = {"SmokeTesting","RegressionTesting"})
 	public void browser() throws IOException
 	{
+	//String Browser = System.getProperty("BROWSER");
 	String Browser=FileUtil.objectoffileutil().readdatafrompropfile("browser");
 	if(Browser.equalsIgnoreCase("firefox"))
 	{
@@ -76,6 +90,12 @@ public class base
 	{
 		driver.close();
 	}
+	@AfterTest
+	public void exit_Reports()
+	{
+		log.info("exit from TEST");
+	}
+	
 	@AfterSuite
 	public void dbclose()
 	{

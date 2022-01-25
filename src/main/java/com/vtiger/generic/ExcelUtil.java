@@ -12,16 +12,18 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelUtil
 {
-	
-	private ExcelUtil()
+	private ExcelUtil()// restrcting the creating the object 
 	{
 
 	}
-	public static ExcelUtil objectexcelUtil()
+	public static ExcelUtil objectoffileutil()
 	{
-		ExcelUtil exe=new ExcelUtil();
-		return exe;
+		ExcelUtil prop=new ExcelUtil();
+	    return prop;
 	}
+
+	
+	
 	public String ReadDataFromExcel() throws EncryptedDocumentException, IOException
 	{
 		FileInputStream fls=new FileInputStream(IAutoconstat.Excelpath);

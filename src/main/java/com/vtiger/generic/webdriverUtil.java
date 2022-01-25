@@ -1,6 +1,7 @@
 package com.vtiger.generic;
 
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
@@ -85,6 +86,7 @@ public class webdriverUtil
 		{
 			String winname=driver.switchTo().window(id).getTitle();
 			System.out.println(winname);
+			
 			if(winname.contains(title))
 			{
 				break;
